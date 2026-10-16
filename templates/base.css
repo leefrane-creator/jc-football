@@ -1,0 +1,41 @@
+/* jc-football 共用样式 · 浅灰底 + 白卡，绿=正面 / 红=风险 / 黄=提示 */
+:root{
+  --bg:#f5f6f8; --card:#fff; --ink:#1c2024; --dim:#6b7280; --line:#e3e6ea;
+  --ok:#0b6b3a; --bad:#c8442b; --warn:#b8791a; --accent:#2b6cb0;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 22px 72px}
+h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
+h2{font-size:19px;margin:38px 0 14px;padding-left:10px;border-left:4px solid var(--accent)}
+h3{font-size:16px;margin:22px 0 10px}
+.sub{color:var(--dim);font-size:13.5px;margin:0 0 18px}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:8px;padding:14px 16px;margin:18px 0;font-size:13.5px}
+.note b{color:var(--warn)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;
+  box-shadow:0 1px 2px rgba(16,24,40,.04)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#fafbfc;color:var(--dim);font-weight:600;font-size:12.5px}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.ok{color:var(--ok)} .bad{color:var(--bad)} .warnc{color:var(--warn)} .dim{color:var(--dim)}
+.pill{display:inline-block;padding:1px 8px;border-radius:20px;font-size:12px;border:1px solid var(--line);background:#fafbfc;margin-right:6px}
+.pill.ok{color:var(--ok);border-color:#bfe0cd;background:#f1f9f4}
+.pill.bad{color:var(--bad);border-color:#f0c9c0;background:#fdf3f1}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.kpi .k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .k .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.kpi .k .l{font-size:12.5px;color:var(--dim);margin-top:2px}
+.card-foot{color:var(--dim);font-size:12.5px;margin-top:20px;text-align:center;border-top:1px solid var(--line);padding-top:14px}
+ul{margin:8px 0 8px 4px;padding-left:20px} li{margin:4px 0}
+.ticket{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:16px 0}
+.ticket .thead{background:#1c2024;color:#fff;padding:11px 18px;display:flex;justify-content:space-between;font-size:13px}
+.ticket .tbody{padding:6px 18px 14px}
+.trow{display:grid;grid-template-columns:64px 1fr 116px 96px;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:13.5px;align-items:start}
+.trow:last-child{border-bottom:0}
+.trow .no{font-weight:700;color:var(--accent)}
+.trow .pick{color:var(--bad);font-weight:700}
+.trow .meta{color:var(--dim);font-size:12px}
+.tfoot{background:#fafbfc;border-top:1px solid var(--line);padding:12px 18px;display:flex;flex-wrap:wrap;gap:18px;font-size:13px}
+.tfoot b{font-variant-numeric:tabular-nums}
