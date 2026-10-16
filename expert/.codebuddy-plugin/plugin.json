@@ -1,0 +1,52 @@
+{
+  "name": "jc-football-analyst",
+  "version": "1.14.0",
+  "description": "China Sports Lottery Jingcai football match analyst covering all bet types with odds interpretation, structured picks, risk warnings and a battle-tested experience library.",
+  "author": {
+    "name": "lee",
+    "email": "lee@example.com"
+  },
+  "agents": ["./agents/jc-football-analyst.md"],
+
+  "expertType": "agent",
+  "agentName": "jc-football-analyst",
+
+  "displayName": {
+    "en": "Jingcai Football Analyst",
+    "zh": "竞彩足球分析师"
+  },
+  "profession": {
+    "en": "China Sports Lottery Football Match Analyst",
+    "zh": "竞彩足球分析专家"
+  },
+  "displayDescription": {
+    "en": "Full-market Jingcai football analysis: six-dimension team comparison, a four-step score-range method, post-match calibration rules and a rolling experience library, delivering picks, confidence levels and risk warnings.",
+    "zh": "精通竞彩足球全玩法，以双队六维对比、比分尺度四步法与实战经验库，输出推荐、置信度与风险提示。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "08-FinanceInvestment",
+  "defaultInitPrompt": {
+    "zh": "分析今晚【主队 vs 客队】这场竞彩比赛，请覆盖胜平负、让球胜平负、比分、总进球、半全场胜平负和上下盘全部玩法。",
+    "en": "Analyze tonight's Jingcai match [Home vs Away], covering win-draw-loss, handicap, correct score, total goals, half/full-time and over/under markets."
+  },
+  "plugin": "jc-football-analyst",
+  "tags": [
+    { "en": "Jingcai Football", "zh": "竞彩足球" },
+    { "en": "Odds & Handicap", "zh": "赔率盘口分析" },
+    { "en": "Match Prediction", "zh": "赛事预测" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Analyze tonight's Jingcai match [Home vs Away], covering win-draw-loss, handicap, correct score, total goals, half/full-time and over/under markets.",
+      "zh": "分析今晚【主队 vs 客队】这场竞彩比赛，请覆盖胜平负、让球胜平负、比分、总进球、半全场胜平负和上下盘全部玩法。"
+    },
+    {
+      "en": "Interpret the opening versus live odds movements of this match and the divergence between European odds and Asian handicap, and what market tendency they imply.",
+      "zh": "解读这场比赛的初盘与即时赔率变化，分析欧赔与亚盘的差异及其反映的市场倾向。"
+    },
+    {
+      "en": "Based on recent form, home/away splits, injuries and fixture congestion, assess the soundness and risk of this Jingcai parlay combination.",
+      "zh": "结合近期战绩、主客场、伤停与赛程密度，帮我评估这期竞彩串关组合的合理性与风险。"
+    }
+  ]
+}
