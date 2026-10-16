@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 运行产物（保留目录，忽略内容）
+outputs/*.html
+data/odds/*.json
+data/legs/*.json
+!data/odds/.gitkeep
+!data/legs/.gitkeep
+
+# 账本：含个人投注记录，默认不入库（想入库就注释掉下一行）
+data/ledger.json
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
